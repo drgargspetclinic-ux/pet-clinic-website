@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><text x='0' y='75' font-size='72' transform='rotate(-25 50 50)' fill-opacity='0.07'>🐾</text></svg>");
+  background-repeat: repeat;
+  background-size: 120px 120px;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+
+.home-container::before {
+  content: '🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾';
+  position: absolute;
+  font-size: 5rem;
+  opacity: 0.07;
+  transform: rotate(-25deg);
+  top: 0;
+  left: -50%;
+  width: 200%;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+
+.home-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #fff3e0;
+    min-height: 100vh;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .home-container {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+  
+  .home-text {
+    max-width: 500px;
+  }
+  
+  .home-text h1 {
+    font-size: 2.5rem;
+    color: #d32f2f;
+    margin-bottom: 1rem;
+  }
+  
+  .home-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .home-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .home-button:hover {
+    background-color: #f4511e;
+  }
+  
+  .home-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
